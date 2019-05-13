@@ -1,33 +1,118 @@
-.App {
-  text-align: center;
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Set a style for all buttons */
+.buttonLogin {
+  background-color: #45c590;
   color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 13px;
 }
 
-.App-link {
-  color: #61dafb;
+.inputItem {
+  background: yellowgreen;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 5px;
+  border: solid;
+  border-width: 0.1px;
+  border-color: yellowgreen;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputItem:hover {
+  background: rgb(179, 211, 117);
+  width: 100%;
+  padding: 12px 20px;
+  margin: 5px;
+  border: solid;
+  border-width: 0.1px;
+  border-color: yellowgreen;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  /* background: #eaf5d4; */
+  padding: 5px 20% 0 20%;
+  height: 100%;
+}
+
+.container-login {
+  padding: 0 30% 0 30%;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* my Css  */
+.listItem{
+  padding: 0px !important;
+}
+
+.listTodo{
+  background: rgb(206, 236, 234);
+  border-top: solid;
+  border-width: 0.3px;
+}
+
+.footerApp{
+  padding: 10px 0px 10px 5px;
+  border-top: solid;
+  border-width: 0.3px;
+  background: rgb(181, 203, 211);
+}
+
+.searchBar{
+  background: rgb(206, 236, 234);
+}
+
+.inputSearch{
+  width: 60%;
+  padding-left: 5px;
+  background: rgb(206, 236, 234);
+  border: solid;
+  border-width: 0.2px;
+  border-color: white;
+}
+
+.inputSearch:hover {
+  width: 60%;
+  padding-left: 5px;
+  background: rgb(206, 236, 234);
+  border: solid;
+  border-width: 0.5px;
+  border-color: white;
 }
